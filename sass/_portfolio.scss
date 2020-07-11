@@ -1,0 +1,89 @@
+.portfolio{
+    background-color: $color-pink;
+    padding: 6rem;
+
+    &__container{
+        overflow: hidden;
+    }
+
+    &__jobs{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__job{
+        width: 23%;
+        margin-bottom: 40px;
+    }
+
+    &__thumb{
+        width: 100%;
+        margin-bottom: 1rem;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.75);
+    }
+
+    &__thumbimg{
+        width: 100%;
+        vertical-align: top;
+        border-radius: 3px;
+    }
+
+    &__description{
+        text-align: center;
+    }
+
+    &__name{
+        color: $color-yellow;
+        font-weight: 400;
+        font-size: 1.7rem;
+        @extend %family-font;
+        @media only screen and (max-width: $bp-largest){
+            font-size: 1.50em;
+        }
+
+        @media only screen and(max-width: $bp-large){
+            font-size: 1.25em;
+        }
+
+        @media only screen and(max-width: $bp-medium){
+            font-size: 1.15em;
+        }
+
+        @media only screen and(max-width: $bp-small){
+            font-size: 1.05em;
+        }
+
+        @media only screen and(max-width: $bp-smallest){
+            font-size: 1em;
+        }
+    }
+
+    &__category{
+        color: $color-blue-light;
+        font-weight: 300;
+        font-size: 1.4rem;
+        @extend %family-font;
+
+        @media only screen and (max-width: $bp-largest){
+            font-size: 1.30em;
+        }
+
+        @media only screen and(max-width: $bp-large){
+            font-size: 1.10em;
+        }
+
+        @media only screen and(max-width: $bp-medium){
+            font-size: 1em;
+        }
+
+        @media only screen and(max-width: $bp-small){
+            font-size: .95em;
+        }
+
+        @media only screen and(max-width: $bp-smallest){
+            font-size: .85em;
+        }
+    }
+}

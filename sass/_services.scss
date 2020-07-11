@@ -1,0 +1,165 @@
+.service{
+    display: flex;
+    width: 95%;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    
+
+    &__description{
+        width: 33rem;
+        height: 40rem;
+        background-color: $color-blue-light;
+        border-radius: 3px;
+        box-shadow: 5px 20px 20px rgba(0,0,0,0.75);
+
+        @media only screen and (max-width: $bp-largest){
+            width: 28em;
+            height: 38em;
+        }
+
+        @media only screen and(max-width: $bp-large){
+            width: 25em;
+            height: 36em;
+        }
+
+        @media only screen and(max-width: $bp-medium){
+            width: 21em;
+            height: 34em;
+        }
+
+        @media only screen and(max-width: $bp-small){
+            width: 19em;
+            height: 33em;
+        }
+
+        @media only screen and(max-width: $bp-smallest){
+            width: 17em;
+            height: 30em;
+        }
+    }
+
+    &__title{
+        @extend %sections-title;
+        text-align: center;
+        margin-top: 10rem;
+        @media only screen and (max-width: $bp-largest){
+            font-size: 1.80em;
+        }
+
+        @media only screen and(max-width: $bp-large){
+            font-size: 1.60em;
+        }
+
+        @media only screen and(max-width: $bp-medium){
+            font-size: 1.15em;
+        }
+
+        @media only screen and(max-width: $bp-small){
+            font-size: 1.05em;
+        }
+
+        @media only screen and(max-width: $bp-smallest){
+            font-size: 1em;
+        }
+    }
+
+    &__brief{
+        @extend %family-font;
+        font-size: 1.6rem;
+        text-align: center;
+        color: $color-blue-lighther;
+        margin-top: 5rem;
+
+        @media only screen and (max-width: $bp-largest){
+            font-size: 1.80em;
+        }
+
+        @media only screen and(max-width: $bp-large){
+            font-size: 1.60em;
+        }
+
+        @media only screen and(max-width: $bp-medium){
+            font-size: 1.15em;
+        }
+
+        @media only screen and(max-width: $bp-small){
+            font-size: 1.05em;
+        }
+
+        @media only screen and(max-width: $bp-smallest){
+            font-size: .85em;
+        }
+    }
+
+    &__image{
+        width: 33rem;
+        height: 40rem;
+        margin-right: 2rem;
+
+        @media only screen and (max-width: $bp-largest){
+            margin-right: 1.8rem;
+        }
+
+        @media only screen and(max-width: $bp-large){
+            margin-right: .5em;
+        }
+
+        @media only screen and(max-width: $bp-medium){
+            margin-right: 1.2em;
+        }
+
+        @media only screen and(max-width: $bp-small){
+            margin-right: 1em;
+        }
+
+        @media only screen and(max-width: $bp-smallest){
+            margin-right: 0;
+        }
+    }
+
+    &__photo{
+        width: 33rem;
+        height: 40rem;
+        object-fit: cover;
+        box-shadow: 5px 20px 20px rgba(0,0,0,0.75);
+
+        @media only screen and (max-width: $bp-largest){
+            width: 22.50em;
+            height: 38em;
+        }
+
+        @media only screen and(max-width: $bp-large){
+            width: 18em;
+            height: 36em;
+        }
+
+        @media only screen and(max-width: $bp-medium){
+            width: 15em;
+            height: 34em;
+        }
+
+        @media only screen and(max-width: $bp-small){
+            width: 7em;
+            height: 33em;
+        }
+
+        @media only screen and(max-width: $bp-smallest){
+            width: 9em;
+            height: 30em;
+        }
+    }
+}
+
+.section__name{
+    @extend %sections-title;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section__name2{
+    @extend %sections-title;
+    text-align: center;
+    margin-top: 10.4rem;
+    margin-bottom: 2rem;
+}

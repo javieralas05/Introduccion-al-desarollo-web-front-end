@@ -1,0 +1,153 @@
+header{
+    background-image: url(../img/bg5.jpg);
+    height: 80vh;
+    background-repeat: no-repeat;    
+    background-size: cover;
+    background-position: center;
+    max-height: 60rem;
+    box-shadow: 0px 30px 60px 5px rgba(0,0,0,0.75);
+    border: none;
+}
+
+.container{
+    width: 95%;
+   
+    &__logo{
+        @extend %nav-bar;
+        display: inline-block;
+        margin-top: 4rem;
+        margin-left: 6rem;
+        position: absolute;
+
+        @media only screen and (max-width: $bp-largest){
+            font-size: 1.40em;
+            margin-top: 4rem;
+            margin-left: 6rem;
+        }
+
+        @media only screen and(max-width: $bp-large){
+            font-size: 1.25em;
+            margin-top: 4rem;
+            margin-left: 6rem;
+        }
+
+        @media only screen and(max-width: $bp-medium){
+            font-size: 1.15em;
+            margin-top: 4rem;
+            margin-left: 6rem;
+        }
+
+        @media only screen and(max-width: $bp-small){
+            font-size: .95em;
+            margin-top: 4rem;
+            margin-left: 6rem;
+        }
+
+        @media only screen and(max-width: $bp-smallest){
+            font-size: .82em;
+            margin-top: 4rem;
+            margin-left: 6rem;
+        }
+    }
+
+    &__menu{
+        text-align: right;
+    }
+
+    &__menui{
+        @extend %nav-bar;
+        margin: 4rem 2rem;
+        text-decoration: none;
+        cursor: pointer;
+        border-bottom: .2rem solid transparent;
+        transition: all .5s;
+        display: inline-block;  
+
+        &:hover{
+            border-bottom: .2rem solid #F6F7F8;
+        }
+
+        @media only screen and (max-width: $bp-largest){
+            font-size: 1.40em;
+        }
+
+        @media only screen and(max-width: $bp-large){
+            font-size: 1.25em;
+        }
+
+        @media only screen and(max-width: $bp-medium){
+            font-size: 1.15em;
+            margin: 4rem 1rem;
+        }
+
+        @media only screen and(max-width: $bp-small){
+            font-size: .95em;
+            margin: 4rem .5rem;
+        }
+
+        @media only screen and(max-width: $bp-smallest){
+            font-size: .82em;
+            margin: 4rem .3rem;
+        }
+    }
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 13rem 0;
+    &__text{
+
+    }
+
+    &__title{
+        @extend %heading-title;
+        text-align: center;
+
+        @media only screen and (max-width: $bp-largest){
+            font-size: 5em;
+        }
+
+        @media only screen and(max-width: $bp-large){
+            font-size: 4.50em;
+        }
+
+        @media only screen and(max-width: $bp-medium){
+            font-size: 3.75em;
+        }
+
+        @media only screen and(max-width: $bp-small){
+            font-size: 3.30em;
+        }
+
+        @media only screen and(max-width: $bp-smallest){
+            font-size: 3em;
+        }
+    }
+
+    &__subtitle{
+        @extend %heading-subtitle;
+        text-align: center;
+
+        @media only screen and (max-width: $bp-largest){
+            font-size: 2.80em;
+        }
+
+        @media only screen and(max-width: $bp-large){
+            font-size: 2.40em;
+        }
+
+        @media only screen and(max-width: $bp-medium){
+            font-size: 1.65em;
+        }
+
+        @media only screen and(max-width: $bp-small){
+            font-size: 1.20em;
+        }
+
+        @media only screen and(max-width: $bp-smallest){
+            font-size: 1em;
+        }
+    }
+}

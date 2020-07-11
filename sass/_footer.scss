@@ -1,0 +1,84 @@
+.contact{
+
+    &__container{
+        padding: 6rem 0;
+    }
+
+    &__form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__form input[type="text"], input[type="email"], textarea{
+        border: 2px solid #cecece;
+        border-radius: 5px;
+        padding: 15px 20px;
+        font-size: 20px;
+        color: $color-blue-dark;
+    }
+
+    &__form input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+        border: 2px solid $color-blue-dark;
+    }
+
+    &__form input[type="text"], input[type="email"]{
+        width: 49%;
+        margin-bottom: 15px;
+    }
+
+    &__form textarea{
+    width: 100%;
+    height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 300px;
+    margin-bottom: 15px;
+    }
+
+
+}
+
+.btn{
+    margin: auto;
+    background: $color-orange;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 40px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $color-yellow;
+    }
+}
+
+.section__name3{
+    @extend %sections-title;
+    text-align: center;
+    margin-top: 10.4rem;
+    margin-bottom: 2rem;
+}
+
+.social-media{
+    
+    &__container{
+        background-color: $color-pink;
+        display: flex;
+        align-content: center;
+        height: 10rem;
+
+
+    }
+}
+
+.footer{
+    background-color: $color-pink;
+
+    &__copyright{
+        font-size: 1.5rem;
+        text-align: center;
+        color: $color-orange;
+    }
+}

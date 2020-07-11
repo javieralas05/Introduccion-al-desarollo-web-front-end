@@ -1,0 +1,45 @@
+%family-font{
+    font-family: 'Montserrat', sans-serif;
+}
+
+%nav-bar{
+    @extend %family-font;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: $color-blue-lighther;
+}
+
+%heading-title{
+    @extend %family-font;
+    font-size: 6rem;
+    font-weight: 800;
+    color: $color-yellow;
+}
+
+%heading-subtitle{
+    @extend %family-font;
+    font-size: 3rem;
+    font-weight: 400;
+    color: $color-blue-lighther;
+}
+
+%sections-title{
+    @extend %family-font;
+    font-size: 2rem;
+    color: $color-yellow;
+    font-weight: 800;
+}
+
+%section-title{
+    @extend %family-font;
+    font-size: 1.6rem;
+    color: $color-blue-light;
+    font-weight: 300;
+}
+
+%services-section{
+    @extend %family-font;
+    font-size: 1.8rem;
+    color: $color-blue-lighther;
+    font-weight: 400;
+}

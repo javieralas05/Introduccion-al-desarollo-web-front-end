@@ -1,0 +1,37 @@
+// COLOR VARIABLES
+
+$color-blue-dark: #21252B;
+$color-blue-light: #282C34;
+$color-blue-lighther: #F6F7F8;
+
+$color-yellow: #F8B133;
+
+$color-pink: #FFEFD6;
+
+$color-orange: #F8512F;
+
+$color-green-light: #EDFEEB;
+
+$color-gradient-1: #282C34;
+$color-gradient-2: #131313;
+
+$bp-largest: 75em;     // 1200px
+$bp-large: 68.75em;    // 1100px
+$bp-medium: 56.25em;   // 900px
+$bp-small: 37.5em;     // 600px
+$bp-smallest: 31.25em; // 500px
+
+// GENERAL
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.50%;
+}

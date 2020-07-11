@@ -1,0 +1,44 @@
+.about{
+    
+    &__me{
+        overflow: hidden;
+    }
+
+    &__photo{
+        text-align: center;
+        margin-top: -7.5rem;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        
+    }
+
+    &__picture{
+        border-radius: 50%;
+        width: 15rem;
+        border: 5px solid rgba(255, 255, 255, 0.6);
+        box-shadow: 0px 20px 40px 5px rgba(0,0,0,0.75);;
+    }
+
+    &__job{
+        @extend %family-font;
+        font-weight: 300;
+        color: $color-blue-light;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 10.4rem;
+    }
+
+    &__title{
+        @extend %sections-title;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &__paragraph{
+        @extend %section-title;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 14rem;
+    }
+}
